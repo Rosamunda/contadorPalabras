@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Contador de palabras</h1>
+                    <textarea onkeypress="APP.caracteres()"  class="form-control" rows="3" id="text"></textarea>
+                    <div>
+                        <p>Cantidad de Caracters</p>
+                        <p id="cantChars"></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul id="words" class="list-group">
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-success" onclick="APP.contar()">Contar Palabras</button> 
+                <button class="btn btn-danger" onclick="APP.reset()">Reset</button>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+		            <h1>Calculadora</h1>
+		            <button class="btn btn-default" id="1" onclick="APP.agregarNumeros(this.id)">1</button>
+		            <button class="btn btn-default" id="2" onclick="APP.agregarNumeros(this.id)">2</button>
+		            <button class="btn btn-default" id="3" onclick="APP.agregarNumeros(this.id)">3</button>
+					<br>
+   		            <button class="btn btn-default" id="4" onclick="APP.agregarNumeros(this.id)">4</button>
+		            <button class="btn btn-default" id="5" onclick="APP.agregarNumeros(this.id)">5</button>
+		            <button class="btn btn-default" id="6" onclick="APP.agregarNumeros(this.id)">6</button>
+					<br>					
+		            <button class="btn btn-default" id="7" onclick="APP.agregarNumeros(this.id)">7</button>
+		            <button class="btn btn-default" id="8" onclick="APP.agregarNumeros(this.id)">8</button>
+		            <button class="btn btn-default" id="95" onclick="APP.agregarNumeros(this.id)">9</button>
+					<br>
+		            <button class="btn btn-default" id="0" onclick="APP.agregarNumeros(this.id)">0</button>
+					<br>
+					<button class="btn btn-default" id="+" onclick="APP.agregarNumeros(this.id)">+</button>
+					<button class="btn btn-default" id="-" onclick="APP.agregarNumeros(this.id)">-</button>
+					<button class="btn btn-default" id="*" onclick="APP.agregarNumeros(this.id)">*</button>
+					<button class="btn btn-default" id="/" onclick="APP.agregarNumeros(this.id)">/</button>
+					<br>
+					<p id="resultado"></p>
+					<button type="button" class="btn btn-warning" id="resultadoFinal"></button>
+					<br><br>
+
+		            <button class="btn btn-success" onclick="APP.calculadora()">Calcular</button>
+                	<button class="btn btn-danger" onclick="APP.reset()">Reset</button>
+
+
+				</div>
+			</div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
